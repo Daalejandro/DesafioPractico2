@@ -1,0 +1,199 @@
+h1::first-letter
+{
+  color: #ed441f;
+}
+
+h1
+{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#titulo
+{
+  padding-top: 10px;
+  background-color: #000;
+  height: 50px;
+  text-align: center;
+}
+#titulo2
+{
+  padding-top: 10px;
+  background-color: #2F224D;
+  height: 20px;
+  text-align: center;
+}
+
+
+.nombre
+{
+  font-size: 20px;
+}
+
+.contenedor
+{
+
+  padding-left: 130px;
+  padding-top: 3px;
+
+
+}
+
+
+.contenedor2
+{
+  padding-left: 90px;
+  padding-top: 5px;
+  padding-bottom: 85px;
+  width: 380px;
+}
+
+.add
+{
+margin-left: 150px;
+margin-bottom: 10px;
+}
+
+.Codigo
+{
+  text-align: center;
+  border-bottom: 2px solid #f1f1f1;
+
+}
+
+.articulo_contenido
+{
+  width: 380px;
+}
+.contenedor_articulo
+{
+
+  text-align: center;
+  display:inline-flex;
+  margin-right: 40px;
+  width: 380px;
+  border: 2px solid #f1f1f1;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  height: 640px;
+
+
+}
+
+p
+{
+
+padding-top:10px;
+overflow-y:auto;
+height: 15%;
+
+}
+
+
+.button
+{
+  width: 40%;
+}
+.btn1
+{
+
+    margin-right: 20px;
+    margin-bottom: 10px;
+
+}
+
+.btn2
+{
+margin-right: -2px;
+margin-bottom: 10px;
+}
+
+
+
+div footer
+{
+  border-top: 2px solid #F7F7F7;
+  text-align: center;
+}
+
+.contenedor h2
+{
+  padding-left: 4px;
+  padding-top: 1px;
+  padding-bottom:10px;
+  z-index: 1;
+
+}
+
+img
+{
+  position: relative;
+
+  background-color: #F2F2F2;
+  z-index: 0;
+
+}
+
+
+h2::first-letter
+{
+  font-size: 30px;
+  color: red;
+  text-transform: uppercase;
+}
+
+#desc_content
+{
+  font-style: italic;
+}
+
+.estrllas
+{
+  font-size: 35px;
+  color: #FFCD06;
+
+  text-shadow: 1px 2px black;
+}
+
+.estrellas
+{
+  font-size: 21px;
+  color: #FFCD06;
+
+  text-shadow: 1px 2px black;
+}
+
+.foot
+{
+  text-align: center;
+  font-family: sans-serif;
+  color: black;
+  width: 100%;
+  background-color: white;
+  bottom: 0;
+  position:relative;
+  border-top: 2px solid #ddd;
+  padding-top: 10px;
+
+}
+
+span
+{
+  color: white;
+}
+
+.imagen
+{
+  border-radius: 10px;
+  object-fit:fill;
+}
+
+.contenedor_principal
+{
+  display:inline-flex;
+  height: 500px;
+  width: 500px;
+  border-radius: 10px;
+  margin-left: 20px;
+
+}

@@ -1,0 +1,99 @@
+<!-- Edit -->
+
+<?php
+
+    foreach ($datos as $dato)
+    {
+ ?>
+
+<div class="" id="" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <center><h4 class="modal-title" id="myModalLabel">Editar</h4></center>
+            </div>
+            <div class="modal-body">
+			<div class="container-fluid">
+			<form method="POST" action="" enctype="multipart/form-data" onsubmit="return confirm('quieres añadir estos datos?')">
+				<div class="row form-group">
+					<div class="col-sm-2">
+						<label class="control-label" style="position:relative; top:7px;">Codigo:</label>
+					</div>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" name="codigo" value="<?php echo $dato["codigo"]; ?>" readonly>
+					</div>
+				</div>
+				<div class="row form-group">
+					<div class="col-sm-2">
+						<label class="control-label" style="position:relative; top:7px;">Nombre:</label>
+					</div>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" name="nombre" value="<?php echo $dato["nombre"]; ?>" maxlength="30" required>
+					</div>
+				</div>
+				<div class="row form-group">
+					<div class="col-sm-2">
+						<label class="control-label" style="position:relative; top:7px;">descripcion:</label>
+					</div>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" name="descripcion" value="<?php echo $dato["descripcion"]; ?>" required>
+					</div>
+				</div>
+				<div class="row form-group">
+					<div class="col-sm-2">
+						<label class="control-label" style="position:relative; top:7px;">Imagen:</label>
+					</div>
+					<div class="col-sm-10">
+            <label>Imagen actual:</label> <?php echo "  ".$dato["img"];?><br>
+
+						<label>Nueva imagen(Opcional):</label><input type="file"  id="file" class="form-control" name="img">
+
+					</div>
+				</div>
+
+        <div class="row form-group">
+					<div class="col-sm-2">
+						<label class="control-label" style="position:relative; top:7px;">categoria:</label>
+					</div>
+					<div class="col-sm-10">
+
+            <select name = "categoria" class="form-control">
+              <option value="Textil" <?php if ($dato["categoria"] == "Textil") echo "selected='selected'";?> >Textil</option>
+              <option value="Promocional" <?php if ($dato["categoria"] == "Promocional") echo "selected='selected'";?> >Promocional</option>
+              </select>
+
+
+					</div>
+				</div>
+
+        <div class="row form-group">
+          <div class="col-sm-2">
+            <label class="control-label" style="position:relative; top:7px;">precio:</label>
+          </div>
+          <div class="col-sm-10">
+            <input type="number" min="0" step="0.1" class="form-control" name="precio" value="<?php echo $dato["precio"]; ?>" required>
+          </div>
+        </div>
+
+        <div class="row form-group">
+          <div class="col-sm-2">
+            <label class="control-label" style="position:relative; top:7px;">existencias:</label>
+          </div>
+          <div class="col-sm-10">
+            <input type="number" min="0.0" step="1" class="form-control" name="existencias" value="<?php echo $dato["existencias"]; ?>" required>
+          </div>
+        </div>
+
+            </div>
+			</div>
+            <div class="modal-footer">
+                <a href="index.php" class="btn btn-default"><span class="glyphicon glyphicon-remove"></span> Cancelar</a>
+                <button type="submit" name="editar" class="btn btn-success"><span class="glyphicon glyphicon-check"></span>Actualizar</a>
+			</form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<?php } ?>

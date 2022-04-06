@@ -1,0 +1,33 @@
+<!-- Edit -->
+
+
+
+<div class="" id="" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <center><h4 class="modal-title" id="myModalLabel">Eliminar</h4></center>
+            </div>
+            <div class="modal-body">
+			<div class="container-fluid">
+			<form method="POST" action=""  onsubmit="return confirm('Seguro quieres eliminar? <?php echo $_GET["codigo"]; ?>')" >
+				<div class="row form-group">
+					<div class="col-sm-2">
+						<label class="control-label" style="position:relative; top:7px;">Codigo:</label>
+					</div>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" name="codigo" value="<?php echo $_GET["codigo"]; ?>" readonly>
+					</div>
+				</div>
+
+            </div>
+			</div>
+            <div class="modal-footer">
+                <a href="index.php" class="btn btn-default"><span class="glyphicon glyphicon-remove"></span> Cancelar</a>
+                <button type="submit" name="eliminar" class="btn btn btn-danger"><span class="glyphicon glyphicon-remove"></span>ELIMINAR</button>
+			</form>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<a href="agregar.php" class="btn btn-primary add" ><span class="glyphicon glyphicon-plus"></span> Agregar Producto</a>
+<div class="contenedor">
+
+  <?php
+      foreach ($datos as $dato)
+      {
+  ?>
+
+  <div class="contenedor_articulo">
+    <div class="articulo_contenido">
+        <h2 class="Codigo"><?=$dato["codigo"]?> </h2>
+        <img src="assets/img/<?=$dato["img"]?>" alt="" width="275px" height="260px">
+        <h2 class="nombre"> <?=$dato["nombre"]?> </h2>
+
+        <div class="estrllas">
+          ★★★★★
+        </div>
+
+        <p id="desc_content"><?=$dato["descripcion"]?></p>
+
+
+          <a href="editar.php? codigo=<?=$dato["codigo"]?>& img=<?=$dato["img"]?>" class="btn btn-success btn1 button">Editar</a>
+          <a href="eliminar.php? codigo=<?=$dato["codigo"]?>& img=<?=$dato["img"]?>" class="btn btn-danger btn2 button">Eliminar</a>
+
+
+
+
+         <footer><strong>Categoria: </strong> <?=$dato["categoria"]?>  <strong> precio:  </strong> <?=$dato["precio"]?> <strong> Existencias:  </strong> <?=$dato["existencias"]?></footer>
+
+    </div>
+
+
+  </div>
+  <?php
+      }
+  ?>
+
+</div>
+
+</html>
